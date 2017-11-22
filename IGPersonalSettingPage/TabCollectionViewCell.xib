@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="brR-iG-dbX" customClass="TabCollectionViewCell" customModule="IGPersonalSettingPage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ8-yw-aUj">
+                        <rect key="frame" x="246" y="30" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="fullButtonClickedWithButton:" destination="brR-iG-dbX" eventType="touchUpInside" id="uDV-se-o2S"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uT-aC-Kbz">
+                        <rect key="frame" x="50" y="30" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="smallButtonClickedWithButton:" destination="brR-iG-dbX" eventType="touchUpInside" id="sPo-r7-5Ge"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5uT-aC-Kbz" firstAttribute="centerY" secondItem="EaW-Qa-gLV" secondAttribute="centerY" id="6dp-ao-9ra"/>
+                <constraint firstItem="5uT-aC-Kbz" firstAttribute="leading" secondItem="EaW-Qa-gLV" secondAttribute="leading" constant="50" id="Guh-U2-UMz"/>
+                <constraint firstItem="uZ8-yw-aUj" firstAttribute="centerY" secondItem="EaW-Qa-gLV" secondAttribute="centerY" id="e0b-2P-7Fk"/>
+                <constraint firstItem="EaW-Qa-gLV" firstAttribute="trailing" secondItem="uZ8-yw-aUj" secondAttribute="trailing" constant="52" id="uAQ-uQ-Hyk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="EaW-Qa-gLV"/>
+            <size key="customSize" width="344" height="90"/>
+            <connections>
+                <outlet property="fullImageButton" destination="uZ8-yw-aUj" id="DYi-cl-IT8"/>
+                <outlet property="smallImageButton" destination="5uT-aC-Kbz" id="vId-Rn-Obe"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="38"/>
+        </collectionViewCell>
+    </objects>
+</document>
